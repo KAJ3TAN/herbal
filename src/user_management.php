@@ -12,8 +12,12 @@ if ($loggedInUsername !== 'admin') { //sprawdzamy czy zalogowany użytkownik to 
     echo "<h1>Dostęp zabroniony</h1>";
     exit;
 }
+$db_host = getenv('DB_HOST');
+$db_user = getenv('DB_USER');
+$db_pass = getenv('DB_PASS');
+$db_name = getenv('DB_NAME');
 
-$conn = new mysqli('localhost', 'root', '', 'users_db'); //nawiązanie połączenia z bazą danych users_db
+$conn = new mysqli($db_host, $db_user, $db_pass, $db_name); //nawiązanie połączenia z bazą danych 
 
 $message = "";
 
