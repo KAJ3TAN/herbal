@@ -13,7 +13,7 @@ $username = $_SESSION['username']; // Pobranie nazwy użytkownika z sesji
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HERBAL LTD.</title>
-    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon">
     <style>
         body {
             margin: 0;
@@ -160,7 +160,7 @@ $username = $_SESSION['username']; // Pobranie nazwy użytkownika z sesji
         <div class="animated-card" onclick="if (checkAccess()) window.location.href='user_management.php';">  <!-- jeżeli checkAccess zwróci true wykonywane jest przekierowanie do user_management.php--> 
             <div class="inner">
                 <div class="title">Zarządzanie Użytkownikami</div>
-                <img class="people" src="./img/people.png">
+                <img class="people" src="./assets/people.png">
             </div>
         </div>
     </div>
