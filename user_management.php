@@ -1,8 +1,8 @@
 <?php
 session_start(); //inicjalizacja sesji, dostęp do superglobalnej zmiennej $_SESSION
 if (!isset($_SESSION['username'])) { /* Sprawdza, czy w sesji znajduje się nazwa użytkownika. Jeśli nie, użytkownik nie ma uprawnień do przeglądania tej strony 
-                                        i zostaje przekierowany na stronę logowania (login.php).*/
-    header("Location: login.php");
+                                        i zostaje przekierowany na stronę logowania (index.php).*/
+    header("Location: index.php");
     exit;
 }
 
