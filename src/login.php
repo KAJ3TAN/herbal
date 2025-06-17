@@ -36,11 +36,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //sprawdza czy metoda żądania to 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HERBAL-LTD | logowanie</title>
-    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url(./img/background.png);
+            background-image: url(./assets/background.png);
             margin: 0;
             padding: 0;
             display: flex;
