@@ -1,5 +1,5 @@
 <?php
-session_start(); //inicjacja sesji PHP (przechowywanie danych użytkownika w superglobalnej zmiennej $_SESSION)
+session_start(); //inicjacja sesji PHP (przechowywanie danych użytkownika w superglobalnej zmiennej $_SESSION) aktualna wersja
 $message = ""; // przechowuje komunikaty błędów
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') { //sprawdza czy metoda żądania to POST, jeśli tak to pobiera wartości z pól formularza (nazwa użytkownika i hasło) 
