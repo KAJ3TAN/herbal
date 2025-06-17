@@ -6,8 +6,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') { //sprawdza czy metoda żądania to 
     $username = $_POST['username']; 
     $password = $_POST['password'];
 
-
-    $conn = new mysqli('localhost', 'root', '', 'users_db'); //połączenie z bazą danych users_db stworzoną w mysql (lokalny serwer -localhost)
+    $db_host = getenv('DB_HOST');
+    $db_user = getenv('DB_USER');
+    $db_pass = getenv('DB_PASS');
+    $db_name = getenv('DB_NAME'); 
+    $conn = new mysqli($db_host, $db_user, $db_pass, $db_name); //połączenie z bazą danych
 
    
     $sql = "SELECT * FROM users WHERE username = ? AND password = ?";  /*pytajniki bronią przed atakami SQL INJECTION(dane podane przez użytkownika są traktowane jako tekst,
